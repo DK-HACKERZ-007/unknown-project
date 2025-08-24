@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile | purple_ops</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">purple_ops</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html" >Login</a>
+      <a href="about.html">About</a>
+      <a href="profile.html" class="active">Profile</a>
+    </nav>
+  </header>
+
+  <section class="profile">
+    <h2>User Profile</h2>
+
+    <div class="profile-pic-container">
+      <div class="profile-pic">
+        <img src="images/img.png" alt="Profile Picture">
+        <label for="profile-upload" class="btn change-pic-btn">Change Profile Picture</label>
+        <input type="file" id="profile-upload" class="file-hidden" accept="image/*">
+      </div>
+    </div>
+
+    <form class="profile-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" class="input">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" class="input">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="tel" placeholder="Enter your phone number" class="input">
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select id="gender" class="input">
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="prefer-not">Prefer not to say</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn submit-btn">Save Profile</button>
+    </form>
+  </section>
+</body>
+</html>
